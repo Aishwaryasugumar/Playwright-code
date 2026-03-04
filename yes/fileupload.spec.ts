@@ -8,7 +8,7 @@ test('verify fileupload', async ({ page }) => {
   await page.locator('//input[@type="submit"]').click()
   await page.waitForTimeout(2000)
 })
-test.only('Date picker', async ({ page }) => {
+test('Date picker', async ({ page }) => {
   await page.goto('https://www.webdriveruniversity.com/Datepicker/index.html');
   await page.locator('//input[@class="form-control"]').click() 
   await page.locator("//td[text()='18']").click()

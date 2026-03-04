@@ -9,7 +9,7 @@ test('verify Data table', async ({ page }) => {
   const data=await page.locator('#t02 tbody tr').nth(2).locator('td').nth(1).textContent()
   console.log(data);
 })
-test.only('verify Dynamic Data table', async ({ page }) => {
+test('verify Dynamic Data table', async ({ page }) => {
   await page.goto('https://practice.expandtesting.com/dynamic-table');
   const table=page.locator('table')
   const rows=table.locator('tbody tr') 

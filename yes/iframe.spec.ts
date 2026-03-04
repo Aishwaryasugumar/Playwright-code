@@ -28,7 +28,7 @@ test('verify iframenew', async ({ page }) => {
   await page.waitForTimeout(500) 
    }
 })
-test.only('verify iframepractice', async ({ page }) => {
+test('verify iframepractice', async ({ page }) => {
   await page.goto('https://practice.expandtesting.com/iframe?utm_source=chatgpt.com');
   const frame=page.frameLocator("#iframe-youtube")
   await frame.locator('//button[@aria-label="Play"]').click()

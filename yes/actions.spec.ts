@@ -39,7 +39,7 @@ test('verify Mouse over3', async ({ page }) => {
     })
      await page.getByText('Link').nth(2).click() 
 })
-test.only('verify Mouse over4', async ({ page }) => {
+test('verify Mouse over4', async ({ page }) => {
     await page.goto('https://www.webdriveruniversity.com/Actions/index.html');
     await page.getByRole('button', { name: 'Hover Over Me Third!' }).hover()
     page.on('dialog', async dialog =>{

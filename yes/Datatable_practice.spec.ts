@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test.only('verify Dynamic Data table', async ({ page }) => {
+test('verify Dynamic Data table', async ({ page }) => {
   await page.goto('https://demo.guru99.com/test/web-table-element.php');
   const table=page.locator('table') 
   const rows=table.locator('tbody tr')

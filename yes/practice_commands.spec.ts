@@ -17,7 +17,7 @@ test('verify Ajax loader', async ({ page }) => {
   await page.locator('//p[contains(text(),"CLICK ME!")]').click()
   await page.locator('//button[contains(text(),"Close")]').click()
 })
-test.only('verify scroll function', async ({ page }) => {
+test('verify scroll function', async ({ page }) => {
   await page.goto('https://demo.guru99.com/test/guru99home/');
   const element=await page.locator('//i[@class="icon-coffee"]')
   await element.scrollIntoViewIfNeeded()
