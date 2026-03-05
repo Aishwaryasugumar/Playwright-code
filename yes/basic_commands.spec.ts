@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('verify page title is present', async ({ page }) => {
+test('verify page title is present', async ({ page }) => {
   await page.goto('https://www.webdriveruniversity.com/Contact-Us/contactus.html');
   await page.getByPlaceholder("First Name").fill("Aishwarya")
   //await page.getByRole('textbox',{name:"last_name"}).fill("harshu") 
