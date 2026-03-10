@@ -4,7 +4,7 @@ test('verify Accordian', async ({ page }) => {
   await page.goto('https://www.webdriveruniversity.com/Accordion/index.html');
   await page.locator("#manual-testing-accordion").click()
   const text=await page.locator('//div[@id="manual-testing-description"]/p')
-  await expect(text).toContainText('realised')
+  await expect(text).toContainText('Realised')
 
 
 
